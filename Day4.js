@@ -14,7 +14,15 @@ console.log("Rectangle area: ", areaOfRectangle);
 /* EXERCISE 2
 Write a function "crazySum" which receives two given integers. If the two values are same, then returns triple their sum.
 */
+const crazySum = function(x,y){
 
+      if(x===y) {
+          console.log((x+y)*3);
+      } else {
+          console.log(x+y);
+      }
+}
+crazySum(5,5);
 
 /* EXERCISE 3
 Write a function "crazyDiff" that computes the absolute difference between a given number and 19. 
@@ -29,5 +37,44 @@ const crazyDiff = function(x){
         console.log("Crazy Difference is: ", x-19);
     }
 }
-const finalDiff = crazyDiff(27);
-    
+crazyDiff(27);
+
+/* EXERCISE 4
+Write a function "boundary" which accept an integer N and returns true if N is within 20 and 100 (included) or equal to 400.
+*/
+
+const boundary = function(N){
+    let boundary = 54
+    if(N>=20 && N<=100 && N === 400){
+        console.log("True");
+    } else {
+        console.log("False");
+    }
+}
+boundary(54);
+
+/* EXERCISE 5
+Write a function "strivify" which accepts a string S. Add to S "Strive" in front of a given string, if the given string begins with "Strive" then return the original string.
+*/
+
+
+/* EXERCISE 6
+Write a function "check3and7" which accepts a positive number and check if it is a multiple of 3 or a multiple of 7.
+HINT: Module Operator
+*/
+
+
+
+/* EXERCISE 7
+Write a function "reverseString" to reverse programmatically a given string (es.: Strive => evirtS).
+*/
+
+const reverseString = function (str) {
+    let splitString = str.split(""); 
+    let reverseArray = splitString.reverse();
+    let joinArray = reverseArray.join("");
+    return joinArray;
+}
+reverseString("Strive");
+
+
