@@ -88,6 +88,13 @@ Write a function "upperFirst" to capitalize the first letter of each word of a g
 Write a function "cutString" to create a new string without the first and last character of a given string.
 */
 
+const cutString = function(str){
+    let res = str.slice(1,-1);
+    return res
+}
+const finalCut = cutString("Hello");
+console.log(finalCut);
+
 /* EXERCISE 10
 Write a function "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10
 */
