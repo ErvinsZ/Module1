@@ -84,6 +84,14 @@ console.log(striveReversed);
 Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as parameter
 */
 
+const upperFirst = function(str){
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}
+const final = upperFirst("santa");
+console.log(final);
+
+
+
 /* EXERCISE 9
 Write a function "cutString" to create a new string without the first and last character of a given string.
 */
