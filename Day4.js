@@ -45,7 +45,7 @@ Write a function "boundary" which accept an integer N and returns true if N is w
 
 const boundary = function(N){
     let boundary = 54
-    if(N>=20 && N<=100 && N === 400){
+    if((N>=20 && N<=100) || N === 400){
         console.log("True");
     } else {
         console.log("False");
@@ -87,7 +87,7 @@ Write a function "upperFirst" to capitalize the first letter of each word of a g
 const upperFirst = function(str){
     return str.charAt(0).toUpperCase() + str.slice(1);
 }
-const final = upperFirst("santa");
+const final = upperFirst("santa claus");
 console.log(final);
 
 
@@ -106,9 +106,6 @@ console.log(finalCut);
 /* EXERCISE 10
 Write a function "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10
 */
-
-
-
 
 
 
