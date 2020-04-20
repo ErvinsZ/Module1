@@ -90,6 +90,8 @@ const upperFirst = function(str){
 const final = upperFirst("santa claus");
 console.log(final);
 
+//split the string (one option);
+
 
 
 /* EXERCISE 9

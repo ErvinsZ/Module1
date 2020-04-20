@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Strive Barbers</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: red
+        }
+        h2 {
+            color:slateblue
+        }
+        .navbar {
+            text-align: center;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 5px;
+        }
+        th {
+            text-align: left;
+        }
+        body{
+	    background-color: #f4f4f4;
+	    font-family: Verdana, Geneva, sans-serif;
+	    line-height: 1.6em;
+        }
+        footer{
+        text-align: center;
+        }
+    </style>
+    </head>
+    <header>
+        <h1>Strive Barbers</h1>
+    </header>
+
+    <div class="navbar">
+        <a class="active" href="#Promo">Promotion</a>
+        <a href="#Address">Our Address</a>
+        <a href="#Pricing">Pricing</a>
+        <a href="#Book">Book a haircut</a>
+      </div>
+    
+    <a name="Promo"></a>
+    <h2>Promotion</h2>
+    <p>Amazing promotion running until the end of April - Get one haircut for the price of three!!!</p>
+
+    <br>
+    <br>
+    <a name="Address"></a>
+    <h2>Our Address</h2>
+    <p>You can find us at :<br> My imagination road 36<br> ZIP code 1938</p>
+
+    <br>
+    <br>
+
+    <h2>Leave your email below</h2>
+      <div>
+        <input id="email" type="email" />
+      </div>
+      <div>
+        <input id="saveButton" type="button" value="Click me!" onclick="getUserData()" />
+      </div>
+
+    <br>
+    <br>
+    <a name="Book"></a>
+    <form>
+        <h2>Book a haircut</h2>
+        <label for="name">Full name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="Date">Date:</label><br>
+        <input type="text" id="Date" name="Date"><br>
+        <label for="Phone">Phone:</label><br>
+        <input type="text" id="Phone" name="Phone"><br>
+        <input type="submit" value="Sign me up">
+      </form>
+      <br>
+      <br>
+      <a name="Pricing"></a>
+      <h2>Pricing</h2>
+      <table>
+        <tr>
+            <th>Haircut</th>
+            <th>Price</th> 
+          </tr>
+          <tr>
+            <td>Mohawk</td>
+            <td>235EUR</td>            
+          </tr>
+          <tr>
+            <td>Bold shave</td>
+            <td>350EUR</td>            
+          </tr>
+          <tr>
+            <td>Fade</td>
+            <td>540EUR</td>
+          </tr>
+      </table>
+<br>
+<footer>
+    Strive Barbers<br>
+    My imagination road 37, 9384<br>
+    +371 8372494<br>
+    <a href="mailto:barber@strivebarbers.com">
+        barber@strivebarbers.com</a>
+</footer>
