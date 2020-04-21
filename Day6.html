@@ -30,7 +30,7 @@
 
         function changeUrls(){
             
-            window.location.replace("https://www.google.com/maps")
+            window.location.href="https://www.google.com/maps";
 
         }
 
@@ -74,30 +74,35 @@
         .myHeading {
           color: red;
         }
-        
+        footer {
+            text-align: center;
+        }
       </style>
     </head>
     <body>
+        <header id = "heading" onclick="makeItClickable()">
         <p>Click the button to change the title of the page.</p>
 
         <button onclick="changeTitle()">Do it, click me</button>
 
         <p id="change"></p>
-    <div id = "heading" onclick="makeItClickable()">
+    
       <div id="changeH1">
         <h1>This is the title of the page</h1>
       </div>
-        <p>Click the "Click me" button to add styling to the title:</p>
-    </div>
+        
+    
 
-<button onclick="addClassToHeading()">Click me</button>
+<button onclick="addClassToHeading()">Click me to make the title color red</button>
       <div>
         <h2>This is the subtitle of the page</h2>
+        <p>Click anywhere above the line to change the background color of the header</p>
       </div>
-
-  ​
+      <hr />
+    </header>
+   
       <div id = "lists">
-        <hr />
+        
   ​
         <ul id="firstList">
           <li>1st</li>
@@ -119,7 +124,7 @@
         <input type="button" onclick="paintItGreen()" value="Change the background color to green" /><br>
     
         <br>
-        <a href="strive.school">This link goes to Strive School</a>
+        <a onclick="newLocation" href="strive.school">This link goes to Strive School</a>
   ​      
 
         <div id = "demo">
@@ -131,7 +136,11 @@
       <div id = "demo1">
         <p>And this text is just for the exercise too!</p>
       </div>
-      <input type="button" onclick="addParagraph()" value="Click me to add a new paragraph" />
+      <input type="button" onclick="changeUrls()" value="Click me to add a new paragraph" />
+
+      <footer>
+          <p>2020</p>
+      </footer>
 
     </body>
   </html>
