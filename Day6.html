@@ -35,8 +35,11 @@
         }
 
         function addToTheSecond() {
-            let newItem = document.createElement('secondList')
-            newItem.innerText = "4th"
+            let newItem = document.createElement('li')
+            let newItem1 = document.createTextNode("4th")
+            newItem.appendChild(newItem1)
+            let element1 = document.getElementById("secondList")
+            element1.appendChild(newItem)
 
         }
 
@@ -71,9 +74,7 @@
         .myHeading {
           color: red;
         }
-        .lists {
-            background-color: white
-        }
+        
       </style>
     </head>
     <body>
