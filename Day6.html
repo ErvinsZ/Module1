@@ -11,9 +11,15 @@
             
             document.title = "New title";
             
-  document.getElementById("change").innerHTML = "The title have been changed";
+            document.getElementById("change").innerHTML = "The title have been changed";
         }
         
+
+        function addClassToHeading() {
+            let element = document.getElementById("changeH1");
+            element.classList.add("myHeading")
+
+        }
 
     </script>
 
@@ -26,13 +32,19 @@
     <body>
         <p>Click the button to change the title of the page.</p>
 
-        <button onclick="changeTitle()">Try it</button>
+        <button onclick="changeTitle()">Do it, click me</button>
 
         <p id="change"></p>
-      <div id >
+      <div id="changeH1">
         <h1>This is the title of the page</h1>
+      </div>
+        <p>Click the "Click me" button to add styling to the title:</p>
+
+<button onclick="addClassToHeading()">Click me</button>
+      <div>
         <h2>This is the subtitle of the page</h2>
       </div>
+
   ​
       <div>
         <hr />
