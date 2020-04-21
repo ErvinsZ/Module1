@@ -39,8 +39,27 @@
             newItem.innerText = "4th"
 
         }
-        
 
+        function addParagraph(){
+            let par = document.createElement("p")
+            let node = document.createTextNode("New Paraghraph.")
+            par.appendChild(node)
+            let element = document.getElementById("demo1")
+            element.appendChild(par)
+        }
+        
+        function firstUlDisappear() {
+            let hidelist = document.getElementById("firstList");
+            if (hidelist.style.display === "none") {
+                hidelist.style.display = "block";
+            } else {
+                hidelist.style.display = "none";
+  }
+        }
+
+        function paintItGreen() {
+        document.getElementById("lists").style.backgroundColor = "green" ;
+        }
 
 
 
@@ -49,6 +68,9 @@
     <style>
         .myHeading {
           color: red;
+        }
+        .lists {
+            background-color: white
         }
       </style>
     </head>
@@ -69,7 +91,7 @@
       </div>
 
   ​
-      <div>
+      <div id = "lists">
         <hr />
   ​
         <ul id="firstList">
@@ -77,15 +99,21 @@
           <li>2nd</li>
           <li>3rd</li>
         </ul>
+
+        <input type="button" onclick="firstUlDisappear()" value="Click to hide the list above" />
   ​
         <ul id="secondList">
           <li>1st</li>
           <li>2nd</li>
           <li>3rd</li>
         </ul>
-        <input type="button" onclick="addToTheSecond()" value="Add item to the list" />
-    </div>
-        
+        </div>
+
+        <input type="button" onclick="addToTheSecond()" value="Add item to the list" /><br>
+        <br>
+        <input type="button" onclick="paintItGreen()" value="Change the background color to green" /><br>
+    
+        <br>
         <a href="strive.school">This link goes to Strive School</a>
   ​      
 
@@ -95,8 +123,10 @@
         <input type="button" onclick="changePcontent()" value="Click me to change the 'paragraph' above" />
     
   ​
-      <div>
+      <div id = "demo1">
         <p>And this text is just for the exercise too!</p>
       </div>
+      <input type="button" onclick="addParagraph()" value="Click me to add a new paragraph" />
+
     </body>
   </html>
