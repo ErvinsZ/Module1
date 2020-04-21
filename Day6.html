@@ -61,7 +61,9 @@
         document.getElementById("lists").style.backgroundColor = "green" ;
         }
 
-
+        function makeItClickable() {
+            document.getElementById("heading").style.backgroundColor = "lightblue";
+        }
 
     </script>
 
@@ -80,10 +82,12 @@
         <button onclick="changeTitle()">Do it, click me</button>
 
         <p id="change"></p>
+    <div id = "heading" onclick="makeItClickable()">
       <div id="changeH1">
         <h1>This is the title of the page</h1>
       </div>
         <p>Click the "Click me" button to add styling to the title:</p>
+    </div>
 
 <button onclick="addClassToHeading()">Click me</button>
       <div>
