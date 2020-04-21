@@ -21,6 +21,29 @@
 
         }
 
+        function changePcontent(){
+            let demoParagraph = document.querySelector('#demo p')
+            console.log(demoParagraph)
+            demoParagraph.innerText = 'Text have been changed'
+
+        }
+
+        function changeUrls(){
+            
+            window.location.replace("https://www.google.com/maps")
+
+        }
+
+        function addToTheSecond() {
+            let newItem = document.createElement('secondList')
+            newItem.innerText = "4th"
+
+        }
+        
+
+
+
+
     </script>
 
     <style>
@@ -60,13 +83,17 @@
           <li>2nd</li>
           <li>3rd</li>
         </ul>
-  ​
+        <input type="button" onclick="addToTheSecond()" value="Add item to the list" />
+    </div>
+        
         <a href="strive.school">This link goes to Strive School</a>
-  ​
-        <div>
+  ​      
+
+        <div id = "demo">
           <p>This text is just for the exercise</p>
         </div>
-      </div>
+        <input type="button" onclick="changePcontent()" value="Click me to change the 'paragraph' above" />
+    
   ​
       <div>
         <p>And this text is just for the exercise too!</p>
