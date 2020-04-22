@@ -57,14 +57,25 @@
 <script>
 
     function addNewTask(){
-        let newItem = document.createElement('li')
-            let newItem1 = document.getElementById("newTask").value;
-            newItem.appendChild(newItem1)
-            let element1 = document.getElementById("myTaskList")
-            element1.appendChild(newItem)
+        let newItem = document.createElement('li');
+        newElement.innerHTML = document.getElementById("newTask").value;
+        document.getElementById("myTaskList").appendChild(newElement);
+        document.getElementById("newTask").value = "";
+            
             
 
     }
+
+    //exercise 6 
+    function removeLast() {
+      let listTasks = document.getElementById('myTaskList').lastChild; 
+      listTasks.remove();
+      
+     }
+
+     //exercise 7 (array)
+     
+
 
 </script>
     </body>
