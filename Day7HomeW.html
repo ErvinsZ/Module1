@@ -56,8 +56,16 @@
 
 <script>
 
+ /* EXERCISE 5: 
+             Add a new task to the list.
+             Suggestion:
+             - Use document.getElementById to get the UL item and the input text
+             - Use the document.createElement to create the new List Item
+             - Append the child to the UL
+         */
+
     function addNewTask(){
-        let newItem = document.createElement('li');
+        let newElement = document.createElement('li');
         newElement.innerHTML = document.getElementById("newTask").value;
         document.getElementById("myTaskList").appendChild(newElement);
         document.getElementById("newTask").value = "";
@@ -68,14 +76,18 @@
 
     //exercise 6 
     function removeLast() {
-      let listTasks = document.getElementById('myTaskList').lastChild; 
-      listTasks.remove();
+      let lengthOfUi = document.querySelectorAll("myTaskList li").length
+      if (lengthOfUi === 0) {
+          console.log("List is empty")
+      } else {
+          let removeLastItem = document.getElementById ("myTaskList");
+          removeLastItem.removeChild(removeLastItem.childNodes[lengthOfUi]);
+      }
       
      }
 
-     //exercise 7 (array)
-     /*1st put the elements in the array 
-     */
+     //exercise 7 removefirst
+     
 
 
 
