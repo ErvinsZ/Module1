@@ -76,7 +76,7 @@
 
     //exercise 6 
     function removeLast() {
-      let lengthOfUi = document.querySelectorAll("myTaskList li").length
+      let lengthOfUi = document.querySelectorAll("myTaskList li").length;
       if (lengthOfUi === 0) {
           console.log("List is empty")
       } else {
@@ -88,6 +88,16 @@
 
      //exercise 7 removefirst
      
+     function removeFirst(){
+        let lengthOfUi = document.querySelectorAll("myTaskList li").length;
+      if (lengthOfUi === 0) {
+          console.log("List is empty")
+      } else {
+        let removeFirst = document.getElementById ("myTaskList");
+          removeFirst.removeChild(removeFirst.childNodes[1]);
+
+     }
+    }
 
 
 
