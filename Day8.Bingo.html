@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Bingo</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito&display=swap"/>
+        <style>
+
+                body {
+                    background-color: rgb(48, 43, 43);
+                    color: white;
+                    font-family: 'Nunito', sans-sarif;
+                    max-width: 1000px;
+                    margin: 0 auto;
+                }
+
+                h1{
+                    text-align: center;
+                }
+                .numbers {
+                    display: inline-block;
+                    width:90px;
+                    text-align: center;
+                    min-height: 30px;
+                
+                }
+                input {
+                background-color: #ef3d59;
+                color: white;
+                border: 0;
+                padding: 10px;
+                font-weight: bold;
+            }
+
+                
+
+        </style>
+
+        </head>
+
+        <body>
+            <h1>Bingo</h1>
+        <div id = "bingo"> </div>
+            <br>
+        <div id = "randomize" > 
+            <p id = ran ></p>
+            <button onclick="document.getElementById('ran').innerHTML = randomNumber(1,76)">Get a number</button>
+        </div>
+
+        <script>
+        
+        
+        for (i = 0; i < 76; i++){
+            let child = document.createElement('div')
+            child.className = 'numbers'
+
+            let numbers = document.createElement('h3')
+            let bingoNumber = i + 1
+            numbers.innerText = bingoNumber
+
+            child.appendChild(numbers)
+            bingo.appendChild(child)
+       
+    }
+
+    function randomNumber(min, max){
+        return Math.floor(Math.random()*(max-min)) + min;
+
+    }
+
+        
+    
+
+          
+        </script>
+        
+
+        </body>
+</html>
